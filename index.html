@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoleMates Sneaker Haven | Premium Footwear</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow p-4">
+  <div class="container mx-auto flex justify-between">
+    <h1 class="text-2xl font-bold">SoleMates</h1>
+    <a href="#shop" class="text-indigo-600 font-semibold">Shop</a>
+  </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-black text-white py-20">
+<div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl font-bold mb-6">Step Into Style</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Discover the latest trends in footwear at Delhi's most trusted sneaker destination</p>
+            <a href="#shop" class="bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition duration-300">Shop Now</a>
+</div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="shop" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Featured Collection</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-200">
+<img src="images/shoes1.jpg" alt="Urban Runner" class="w-full h-64 object-cover">
+<div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Urban Runner</h3>
+                        <p class="text-gray-600 mb-4">Lightweight comfort for all-day wear</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">₹2,499</span>
+                           <button onclick="addToCart('Urban Runner', 2499)" 
+class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">
+  Add to Cart
+</button>
+</div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                   <img src="images/shoes2.jpg" alt="Street Classic" class="w-full h-64 object-cover">
+<div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Street Classic</h3>
+                        <p class="text-gray-600 mb-4">Timeless design meets modern comfort</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">₹1,999</span>
+                           <button onclick="addToCart('Street Classic', 1999)" 
+class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">
+  Add to Cart
+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="images/shoes3.jpg" alt="Performance Pro" class="w-full h-64 object-cover">
+<div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Performance Pro</h3>
+                        <p class="text-gray-600 mb-4">Engineered for peak athletic performance</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">₹3,299</span>
+                           <button onclick="addToCart('Performance Pro', 3299)" 
+class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">
+  Add to Cart
+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="images/shoes4.jpg" alt="Limited Edition" class="w-full h-64 object-cover">
+<div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Limited Edition</h3>
+                        <p class="text-gray-600 mb-4">Exclusive design for collectors</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">₹4,999</span>
+                            <button onclick="addToCart('Limited Edition', 4999)" 
+class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">
+  Add to Cart
+</button>
+                        </div>
+                    </div>
+                </div> <!-- Product 5 -->
+<div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-200">
+ <img src="images/shoes5.jpg" alt="Jorden 1 Blue" class="w-full h-64 object-cover">
+  <div class="p-6">
+    <h3 class="text-xl font-semibold mb-2">Jorden 1 Blue</h3>
+    <p class="text-gray-600 mb-4">Stylish high-top sneaker with premium comfort</p>
+
+    <div class="flex justify-between items-center">
+      <span class="font-bold text-lg">₹1,990</span>
+
+      <button onclick="addToCart('Jorden 1 Blue', 1990)" 
+      class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>   <!-- Product 6 -->
+<div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-200">
+  <img src="images/shoes6.jpg" alt="Sky Runner" class="w-full h-64 object-cover">
+  <div class="p-6">
+    <h3 class="text-xl font-semibold mb-2">Sky Runner</h3>
+    <p class="text-gray-600 mb-4">Lightweight sneaker with breathable comfort</p>
+
+    <div class="flex justify-between items-center">
+      <span class="font-bold text-lg">₹1,790</span>
+
+      <button onclick="addToCart('Sky Runner', 1790)" 
+      class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>     <!-- Product 7 -->
+<div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-200">
+ <img src="images/shoes7.jpg" alt="Urban Glide" class="w-full h-64 object-cover">
+  <div class="p-6">
+    <h3 class="text-xl font-semibold mb-2">Urban Glide</h3>
+    <p class="text-gray-600 mb-4">Versatile sneaker for daily urban style</p>
+
+    <div class="flex justify-between items-center">
+      <span class="font-bold text-lg">₹2,150</span>
+
+      <button onclick="addToCart('Urban Glide', 2150)" 
+      class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>   <!-- Product 8 -->
+<div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-200">
+  <img src="images/shoes8.jpg" alt="Street Pulse" class="w-full h-64 object-cover">
+  <div class="p-6">
+    <h3 class="text-xl font-semibold mb-2">Street Pulse</h3>
+    <p class="text-gray-600 mb-4">Bold & stylish sneaker for everyday wear</p>
+
+    <div class="flex justify-between items-center">
+      <span class="font-bold text-lg">₹1,650</span>
+
+      <button onclick="addToCart('Street Pulse', 1650)" 
+      class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>   <!-- grid end -->
+</div>   <!-- container end -->
+</section> <!-- Featured products section end -->
+
+
+
+
+
+               
+            
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+<div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">What Our Customers Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded shadow">
+  <p>"I have bought many pairs from him. Quality and customer service is really great."</p>
+  <h4 class="mt-4 font-bold">– Sanskar Rana</h4>
+</div>
+
+<div class="bg-gray-100 p-6 rounded shadow">
+  <p>"Best shoes and best price 😉"</p>
+  <h4 class="mt-4 font-bold">– Varun Rawat</h4>
+</div>
+
+<div class="bg-gray-100 p-6 rounded shadow">
+  <p>"Delivery is fast got my tracking I'd within 24 hours."</p>
+  <h4 class="mt-4 font-bold">– Gaurang Verma</h4>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store Info -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://huggingface.co/spaces/abhishek9910/solemates-sneaker-haven/resolve/main/images/dcf21f90dea5a65ae252a548e2b60fea.jpg" alt="SoleMates Store" class="rounded-lg shadow-lg w-full">
+</div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold mb-6">Visit Our Store</h2>
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold mb-2">Address</h3>
+                        <p class="text-gray-600">Kh-10/6 A block street no-14 Kamalpur Kamalvihar, d, Burari, Delhi, 110084</p>
+                    </div>
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold mb-2">Hours</h3>
+                        <p class="text-gray-600">Open daily: 10:00 AM - 9:00 PM</p>
+                    </div>
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold mb-2">Contact</h3>
+                        <p class="text-gray-600">Phone: 088822 91224</p>
+                    </div>
+                    <a href="https://www.instagram.com/theshoestop.in" target="_blank" class="inline-flex items-center text-indigo-600 hover:text-indigo-800">
+                        <i data-feather="instagram" class="mr-2"></i> Follow us on Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Cart Button -->
+<button onclick="openCart()" 
+class="fixed top-5 right-5 bg-indigo-600 text-white px-5 py-2 rounded-full shadow-lg">
+🛒 Cart (<span id="cart-count">0</span>)
+</button>
+
+<!-- Cart Box -->
+<div id="cart-box" class="hidden fixed top-20 right-5 bg-white w-80 p-4 shadow-xl border rounded">
+  <h2 class="text-xl font-bold mb-3">Your Cart</h2>
+  <div id="cart-items"></div>
+  <p class="font-bold mt-3">Total: ₹<span id="cart-total">0</span></p>
+  <div id="payment-btn" class="mt-3"></div>
+</div>
+
+
+   
+    
+<footer class="bg-black text-white text-center p-6 mt-10">
+
+  <p>© 2026 SoleMates Sneaker Haven. All rights reserved.</p>
+
+  <!-- Cart Button -->
+ 
+ 
+</footer>
+
+
+<script>
+let cart = [];
+
+function addToCart(name, price) {
+  cart.push({name, price});
+  document.getElementById('cart-count').innerText = cart.length;
+  alert(name + " added to cart!");
+}
+
+function openCart() {
+  const box = document.getElementById('cart-box');
+  box.classList.toggle('hidden');
+
+  let items = '';
+  let total = 0;
+
+  cart.forEach((item, index) => {
+    items += `
+      <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+        <span>${item.name} - ₹${item.price}</span>
+        <button onclick="removeItem(${index})" style="color:red;">X</button>
+      </div>
+    `;
+    total += item.price;
+  });
+
+  document.getElementById('cart-items').innerHTML = items;
+  document.getElementById('cart-total').innerText = total;
+}
+
+function removeItem(i) {
+  cart.splice(i, 1);
+  document.getElementById('cart-count').innerText = cart.length;
+  openCart();
+}
+
+function checkout() {
+  let total = 0;
+  cart.forEach(item => total += item.price);
+
+  const options = {
+    "key": "rzp_test_xxxxx",
+    "amount": total * 100,
+    "currency": "INR",
+    "name": "SoleMates Sneaker Haven",
+    "description": "Sneaker Purchase",
+method: {
+  upi: true,
+  card: true,
+  netbanking: true,
+  wallet: true
+},
+
+    "handler": function (response){
+        alert("Payment Successful!");
+        cart = [];
+        openCart();
+    }
+  };
+
+  const rzp = new Razorpay(options);
+  rzp.open();
+}
+</script>
+
+<script>
+        feather.replace();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</body>
+</html>
