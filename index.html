@@ -33,8 +33,7 @@
     <section id="shop" class="py-16 bg-white">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12">Featured Collection</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
- <!-- Product 1 -->
+<!-- Product 1 -->
 <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-200">
 
   <img src="images/shoes1.jpg" alt="Urban Runner" class="w-full h-64 object-cover">
@@ -43,8 +42,8 @@
     <h3 class="text-xl font-semibold mb-2">Urban Runner</h3>
     <p class="text-gray-600 mb-4">Lightweight comfort for all-day wear</p>
 
-    <!-- Size Select -->
-    <select id="size-urban" class="border p-2 mb-3 w-full">
+    <!-- Size -->
+    <select id="size-urban" class="border p-2 mb-4 w-full">
       <option value="">Select Size</option>
       <option>6</option>
       <option>7</option>
@@ -64,10 +63,10 @@
       </button>
     </div>
   </div>
-
 </div>
 
                 
+<!-- Product 2 -->
 <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-200">
   <img src="images/shoes2.jpg" alt="Street Classic" class="w-full h-64 object-cover">
 
@@ -75,14 +74,20 @@
     <h3 class="text-xl font-semibold mb-2">Street Classic</h3>
     <p class="text-gray-600 mb-4">Timeless design meets modern comfort</p>
 
-    <select id="size-street" class="border p-2 mb-3 w-full">
+    <select id="size-street" class="border p-2 mb-4 w-full">
       <option value="">Select Size</option>
-      <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
     </select>
 
     <div class="flex justify-between items-center">
       <span class="font-bold text-lg">₹1,999</span>
-      <button onclick="addToCart('Street Classic', 1999, 'size-street')"
+
+      <button
+        onclick="addToCart('Street Classic', 1999, 'size-street')"
         class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">
         Add to Cart
       </button>
@@ -91,6 +96,7 @@
 </div>
 
                 
+<!-- Product 3 -->
 <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-200">
   <img src="images/shoes3.jpg" alt="Performance Pro" class="w-full h-64 object-cover">
 
@@ -98,14 +104,20 @@
     <h3 class="text-xl font-semibold mb-2">Performance Pro</h3>
     <p class="text-gray-600 mb-4">Engineered for peak athletic performance</p>
 
-    <select id="size-pro" class="border p-2 mb-3 w-full">
+    <select id="size-performance" class="border p-2 mb-4 w-full">
       <option value="">Select Size</option>
-      <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
     </select>
 
     <div class="flex justify-between items-center">
       <span class="font-bold text-lg">₹3,299</span>
-      <button onclick="addToCart('Performance Pro', 3299, 'size-pro')"
+
+      <button
+        onclick="addToCart('Performance Pro', 3299, 'size-performance')"
         class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">
         Add to Cart
       </button>
@@ -113,6 +125,8 @@
   </div>
 </div>
 
+
+<!-- Product 4 -->
 <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-200">
   <img src="images/shoes4.jpg" alt="Limited Edition" class="w-full h-64 object-cover">
 
@@ -120,14 +134,20 @@
     <h3 class="text-xl font-semibold mb-2">Limited Edition</h3>
     <p class="text-gray-600 mb-4">Exclusive design for collectors</p>
 
-    <select id="size-limited" class="border p-2 mb-3 w-full">
+    <select id="size-limited" class="border p-2 mb-4 w-full">
       <option value="">Select Size</option>
-      <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
     </select>
 
     <div class="flex justify-between items-center">
       <span class="font-bold text-lg">₹4,999</span>
-      <button onclick="addToCart('Limited Edition', 4999, 'size-limited')"
+
+      <button
+        onclick="addToCart('Limited Edition', 4999, 'size-limited')"
         class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">
         Add to Cart
       </button>
@@ -135,85 +155,100 @@
   </div>
 </div>
 
+
+<!-- Product 5 -->
 <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-200">
-  <img src="images/shoes5.jpg" alt="Desert Walk" class="w-full h-64 object-cover">
+  <img src="images/shoes5.jpg" alt="Urban Green" class="w-full h-64 object-cover">
 
   <div class="p-6">
-    <h3 class="text-xl font-semibold mb-2">Desert Walk</h3>
-    <p class="text-gray-600 mb-4">Rugged comfort for outdoor wear</p>
+    <h3 class="text-xl font-semibold mb-2">Urban Green</h3>
+    <p class="text-gray-600 mb-4">Fresh green street style</p>
 
-    <select id="size-desert" class="border p-2 mb-3 w-full">
+    <select id="size-5" class="border p-2 mb-4 w-full">
       <option value="">Select Size</option>
       <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
     </select>
 
     <div class="flex justify-between items-center">
-      <span class="font-bold text-lg">₹2,799</span>
-      <button onclick="addToCart('Desert Walk', 2799, 'size-desert')"
-        class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">
+      <span class="font-bold text-lg">₹2,599</span>
+
+      <button onclick="addToCart('Urban Green', 2599, 'size-5')" class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">
         Add to Cart
       </button>
     </div>
   </div>
 </div>
+
+
+
+<!-- Product 6 -->
 <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-200">
-  <img src="images/shoes6.jpg" alt="Ocean Breeze" class="w-full h-64 object-cover">
+  <img src="images/shoes6.jpg" alt="Vintage Blue" class="w-full h-64 object-cover">
 
   <div class="p-6">
-    <h3 class="text-xl font-semibold mb-2">Ocean Breeze</h3>
-    <p class="text-gray-600 mb-4">Cool & breathable everyday wear</p>
+    <h3 class="text-xl font-semibold mb-2">Vintage Blue</h3>
+    <p class="text-gray-600 mb-4">Classic blue retro vibes</p>
 
-    <select id="size-ocean" class="border p-2 mb-3 w-full">
+    <select id="size-6" class="border p-2 mb-4 w-full">
       <option value="">Select Size</option>
       <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
     </select>
 
     <div class="flex justify-between items-center">
-      <span class="font-bold text-lg">₹2,199</span>
-      <button onclick="addToCart('Ocean Breeze', 2199, 'size-ocean')"
-        class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">
+      <span class="font-bold text-lg">₹2,899</span>
+
+      <button onclick="addToCart('Vintage Blue', 2899, 'size-6')" class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">
         Add to Cart
       </button>
     </div>
   </div>
 </div>
+
+
+
+<!-- Product 7 -->
 <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-200">
-  <img src="images/shoes7.jpg" alt="Forest Trek" class="w-full h-64 object-cover">
+  <img src="images/shoes7.jpg" alt="Olive Street" class="w-full h-64 object-cover">
 
   <div class="p-6">
-    <h3 class="text-xl font-semibold mb-2">Forest Trek</h3>
-    <p class="text-gray-600 mb-4">Perfect for adventure lovers</p>
+    <h3 class="text-xl font-semibold mb-2">Olive Street</h3>
+    <p class="text-gray-600 mb-4">Olive toned street fashion</p>
 
-    <select id="size-forest" class="border p-2 mb-3 w-full">
+    <select id="size-7" class="border p-2 mb-4 w-full">
       <option value="">Select Size</option>
       <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
     </select>
 
     <div class="flex justify-between items-center">
-      <span class="font-bold text-lg">₹3,099</span>
-      <button onclick="addToCart('Forest Trek', 3099, 'size-forest')"
-        class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">
+      <span class="font-bold text-lg">₹3,199</span>
+
+      <button onclick="addToCart('Olive Street', 3199, 'size-7')" class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">
         Add to Cart
       </button>
     </div>
   </div>
 </div>
+
+
+
+
+<!-- Product 8 -->
 <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-200">
-  <img src="images/shoes8.jpg" alt="Royal Brown" class="w-full h-64 object-cover">
+  <img src="images/shoes8.jpg" alt="Brown Classic" class="w-full h-64 object-cover">
 
   <div class="p-6">
-    <h3 class="text-xl font-semibold mb-2">Royal Brown</h3>
-    <p class="text-gray-600 mb-4">Premium look with ultimate comfort</p>
+    <h3 class="text-xl font-semibold mb-2">Brown Classic</h3>
+    <p class="text-gray-600 mb-4">Premium brown leather look</p>
 
-    <select id="size-royal" class="border p-2 mb-3 w-full">
+    <select id="size-8" class="border p-2 mb-4 w-full">
       <option value="">Select Size</option>
       <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
     </select>
 
     <div class="flex justify-between items-center">
       <span class="font-bold text-lg">₹3,499</span>
-      <button onclick="addToCart('Royal Brown', 3499, 'size-royal')"
-        class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">
+
+      <button onclick="addToCart('Brown Classic', 3499, 'size-8')" class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">
         Add to Cart
       </button>
     </div>
@@ -262,7 +297,7 @@
                   
 <img src="images/store.jpg"
      alt="SoleMates Store"
-     class="rounded-lg shadow-lg w-full h-[600px] object-cover">
+     class="rounded-lg shadow-lg w-full h-[500px] object-contain bg-white">
 
 
 </div>
@@ -348,12 +383,23 @@ function openCart() {
   cart.forEach((item, index) => {
     items += `
       <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
-        <span>${item.name} - ₹${item.price}</span>
+        <span>${item.name} (Size ${item.size}) - ₹${item.price}</span>
         <button onclick="removeItem(${index})" style="color:red;">X</button>
       </div>
     `;
     total += item.price;
   });
+
+  document.getElementById('cart-items').innerHTML = items;
+  document.getElementById('cart-total').innerText = total;
+
+  document.getElementById('payment-btn').innerHTML = `
+    <button onclick="checkout()" 
+      style="margin-top:10px; width:100%; background:black; color:white; padding:10px; border-radius:6px;">
+      Proceed to Pay ₹${total}
+    </button>
+  `;
+}
 
   document.getElementById('cart-items').innerHTML = items;
   document.getElementById('cart-total').innerText = total;
