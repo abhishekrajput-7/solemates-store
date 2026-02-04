@@ -404,6 +404,17 @@ function openCart() {
 
   document.getElementById('cart-items').innerHTML = items;
   document.getElementById('cart-total').innerText = total;
+
+  document.getElementById('payment-btn').innerHTML = `
+    <button onclick="checkout()" 
+      style="margin-top:10px; width:100%; background:black; color:white; padding:10px; border-radius:6px;">
+      Proceed to Pay ₹${total}
+    </button>
+  `;
+}
+
+  document.getElementById('cart-items').innerHTML = items;
+  document.getElementById('cart-total').innerText = total;
 }
 
 function removeItem(i) {
