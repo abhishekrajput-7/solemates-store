@@ -453,9 +453,78 @@ method: {
 </script>
 
 <script>
-        feather.replace();
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+let cart = [];
+
+function addToCart(name, price, sizeId) {
+  const size = document.getElementById(sizeId).value;
+
+  if (size === "") {
+    alert("Please select shoe size!");
+    return;
+  }
+
+  cart.push({ name, price, size });
+  document.getElementById('cart-count').innerText = cart.length;
+  alert(name + " (Size " + size + ") added to cart!");
+}
+
+function openCart() {
+  const box = document.getElementById('cart-box');
+  box.classList.toggle('hidden');
+
+  let items = '';
+  let total = 0;
+
+  cart.forEach((item, index) => {
+    items += `
+      <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+        <span>${item.name} (Size ${item.size}) - ₹${item.price}</span>
+        <button onclick="removeItem(${index})" style="color:red;">X</button>
+      </div>
+    `;
+    total += item.price;
+  });
+
+  document.getElementById('cart-items').innerHTML = items;
+  document.getElementById('cart-total').innerText = total;
+
+  document.getElementById('payment-btn').innerHTML = `
+    <button onclick="checkout()" 
+      style="margin-top:10px; width:100%; background:black; color:white; padding:10px; border-radius:6px;">
+      Proceed to Pay ₹${total}
+    </button>
+  `;
+}
+
+function removeItem(i) {
+  cart.splice(i, 1);
+  document.getElementById('cart-count').innerText = cart.length;
+  openCart();
+}
+
+function checkout() {
+  let total = 0;
+  cart.forEach(item => total += item.price);
+
+  const options = {
+    key: "rzp_test_xxxxx",
+    amount: total * 100,
+    currency: "INR",
+    name: "SoleMates Sneaker Haven",
+    description: "Sneaker Purchase",
+    handler: function () {
+      alert("Payment Successful!");
+      cart = [];
+      document.getElementById('cart-count').innerText = 0;
+      openCart();
+    }
+  };
+
+  const rzp = new Razorpay(options);
+  rzp.open();
+}
+</script>
+
+
 </body>
 </html>
